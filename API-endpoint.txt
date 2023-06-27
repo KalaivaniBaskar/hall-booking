@@ -1,0 +1,26 @@
+find all rooms
+http://localhost:9000/room/all
+
+create a new room
+http://localhost:9000/room/create
+
+find all bookings 
+http://localhost:9000/booking/all
+
+find all upcoming bookings
+http://localhost:9000/booking/all?status=booked
+find all old bookings
+http://localhost:9000/booking/all?status=expired
+
+Create a new booking by giving a roomID
+http://localhost:9000/booking/create/:id 
+--http://localhost:9000/booking/create/R103
+
+find booked customer details
+http://localhost:9000/customers/all
+find old customer details
+http://localhost:9000/customers/all?status=expired
+
+find all booking by a customer by giving customer name
+http://localhost:9000/customers/find/:name
+--http://localhost:9000/customers/find/santosh
